@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!--CSS Connection Link-->
+    <link rel="stylesheet" href="style.css">
+    <!--Javascript Connection Link-->
+    <script type="module" src="app.js"></script>
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Bootstrap CSS Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Bootstrap Icon Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!--Font Awesome links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+     <!--AOS Animation Library Link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<style>
+    body{
+        background-color: black;
+    }
+    
+</style>
+<body>
+
+<header>
+  <!--Navbar Start-->
+
+      <nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand " href="#">MyFolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#home">
+            <i class="fa fa-home" style="color: palevioletred "></i>
+            <span>Home</span>
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">
+            <i class="fa fa-user icon-scroll" style="color: orangered ;"></i>
+            <span>About me</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">
+            <i class="fa fa-briefcase" style="color: #2E86C1;" ></i>
+            <span>Experience</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#service">
+            <i class="fa fa-cogs" style="color: #28B463"></i>
+            <span>Services</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#project">
+            <i class="fa fa-code code-icon"  style="color: #F1C40F"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#certificate">
+            <i class="fa fa-certificate" style="color: aqua "></i>
+            <span>Certifications</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">
+            <i class="fa fa-envelope" style="color: #E74C3C;"></i>
+            <span>Contact me</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="social_media-icons" href="#"><i class="fa-brands fa-linkedin social-media1" 
+   style="font-size:40px;color:blue;" 
+   onclick="window.open('https://www.linkedin.com/in/sivakumarselvaraj2003', '_blank');">
+</i>
+<i class="fa-brands fa-github social-media2" 
+   style="font-size:40px;color:blue;" 
+   onclick="window.open('https://github.com/SivakumarSelvaraj2003', '_blank');">
+</i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+  <!--Drawing Line-->
+  <div class="line"></div>
+</nav>
+</header>
+<!--Navbar End-->
+
+<main>
+  <!--Introduction Section Starts-->
+<section>
+  <div class="container" id="home">
+  <div class="text-section">
+    <div class="text-heading">
+      <h1 class="top-animation">hi, I'm</h1>
+      <h1 class="highlight">Sivakumar  <span id="animated-icon" ></span></h1>
+    </div>
+    <p> <span class="text-para"></span></p>
+  </div>
+  <div data-aos="zoom-out" data-aos-duration="1000"  class="img-section">
+    <img src="images/me1.png" data-aos="zoom-in" data-aos-duration="1000" class="myimage" alt="me" width="350px" height="350px">
+  </div>
+</div>
+<br>
+<br>
+</section>
+ <!--Introduction Section Ends-->
+ 
+ <!--About me Section Starts-->
+<div class="container2" id="about">
+  <div class="img-container"><img src="images/about.jpeg" data-aos="fade-up"data-aos-duration="1000"  alt="me" width="400px" height="300px" class="aboutmeImage" id="aboutImage">
+  </div>
+  <div  data-aos="fade-down" data-aos-duration="1000"  class="aboutme-text">
+  <h1>About Me {</h1>
+  
+    <div class="info">
+   <div class="resume">
+     <div class="name-div">
+      <h4 >Name: Sivakumar.</h4>
+    <h4 >Profession: Frontend Developer.</h4>
+    </div>
+    <div class="resume-div">
+<p><a href=""><img src="images/cv.png" alt="" width="50px" height="50px"></a></p>
+    </div>
+   </div>
+    <p >Hello! I’m a passionate <span class="info-span"> Frontend Developer </span> specializing in <span class="info-span"> HTML, CSS, JavaScript, </span> and modern frameworks. I focus on creating responsive, <span class="info-span">visually engaging,</span> and user-friendly websites with <span class="info-span"> clean, maintainable code</span>. Always eager to <span class="info-span"> learn</span>, I stay up-to-date with the  <span class="info-span"> latest web trends</span> and enjoy <span class="info-span"> solving real-world problems</span> both solo and in teams.
+
+</p>
+  </div>
+  <div class="loader" id="toggle-btn" data-text="Open it..."></div> 
+  <h1>}</h1>
+  
+  </div>
+</div>
+ <!--About me Section Ends-->
+
+ <!--Skills Section Starts-->
+<div class="skills-section">
+  <div data-aos="flip-left" data-aos-duration="1000" class="skills">
+    <h3 class="frontend-head">FrontEnd Skills</h3>
+    <div class="skill-name">
+      <p><i data-aos="zoom-out-up" data-aos-duration="1000"  class="fa-brands fa-html5" style="color: orangered; font-size: 1.5rem;"></i>HTML</p>
+        <p>95%</p>
+    </div>
+    <!--progress-->
+    <div class="progress">
+  <div  data-aos="slide-right" data-aos-duration="1500"  class="progress-bar"  style="width: 95%; background-color: orangered;" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+    <div class="skill-name">
+      <p><i data-aos="zoom-out-up" data-aos-duration="1000" class="fa-brands fa-css3-alt" style="color: blue; font-size: 1.5rem;"></i> CSS</p>
+      <p>90%</p>
+    </div>
+        <!--progress-->
+    <div class="progress">
+  <div data-aos="slide-right" data-aos-duration="1500" class="progress-bar" style="width: 90%; background-color: blue;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+    <div class="skill-name">
+      <p><i data-aos="zoom-out-up" data-aos-duration="1000" class="fa-brands fa-js" style="color: yellow; font-size: 1.5rem;"></i> JavaScript</p>
+      <p>80%</p>
+    </div>
+        <!--progress-->
+    <div class="progress">
+  <div data-aos="slide-right" data-aos-duration="1500" class="progress-bar"  style="width: 80%; background-color: yellow;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+  </div>
+
+  <div data-aos="flip-right" data-aos-duration="1000" class="skills">
+    <h3 class="framework-head">Framework</h3>
+    <div class="skill-name">
+      <p> <i data-aos="zoom-out-up" data-aos-duration="1000" class="fa-brands fa-bootstrap" style="color: purple; font-size: 1.5rem;"></i> Bootstrap</p>
+      <p>85%</p>
+    </div>
+        <!--progress-->
+    <div class="progress">
+  <div data-aos="slide-right" data-aos-duration="1500" class="progress-bar"  style="width: 85%; background-color: purple;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+    <div class="skill-name">
+      <p> <img data-aos="zoom-out-up" data-aos-duration="1000" src="images/gsap.png" alt="gsap" width="30px" height="30px"> GSAP</p>
+      <p>80%</p>
+    </div>
+        <!--progress-->
+    <div class="progress">
+  <div data-aos="slide-right" data-aos-duration="1500" class="progress-bar"  style="width: 80%; background-color: #28B463;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+    <div class="skill-name">
+      <p> <i data-aos="zoom-out-up" data-aos-duration="1000" class="fa-brands fa-github" style="color: red; font-size: 1.5rem;"></i> Git/Github</p>
+      <p>90%</p>
+    </div>
+        <!--progress-->
+    <div class="progress">
+  <div data-aos="slide-right" data-aos-duration="1500" class="progress-bar"  style="width: 90%; background-color: red" role="progressbar " style="border-radius: 0;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
+</div>
+
+  </div>
+
+</div>
+<div class="line3"></div>
+ <!--Skills Section Ends-->
+
+ <!--Experience Section Starts-->
+<div class="container3" id="experience">
+  <h3 class="container3-tittle">Experience</h3>
+  <div class="experience-section">
+   <div class="section1">
+    <p >13.05-2024 to 31.05.2024</p>
+    <h4 style="font-weight: bolder;" class="company-name">Bluon Tech Solutions<br>Kovilpatti</h4>
+    <p><i>Full Stack Development</i></p>
+    <p class="section-about" style="height: 50%;">
+During my full-stack development internship, I gained hands-on experience in frontend development, contributing to real-world projects by building features, optimizing performance,solving challenges. This enhanced my understanding of the software development lifecycle.</p>
+<!--Certificate Image-->
+<p><a href="images/internship.jpeg" target="_blank"><i class="bi bi-award" style="font-size: 1.5rem; color: black; cursor: pointer;"></i></a></p>
+   </div>
+   <div class="section2">
+     <p>04.09.2023 to 18.09.2023</p>
+     <h4 style="font-weight: bolder;" class="company-name">Retech Solutions pvt.ltd<br>chennai</h4>
+     <p><i>Artificial Intelligence</i></p>
+     <p class="section-about">
+During my artificial intelligence internship, I built a strong foundation in AI and machine learning, gaining hands-on experience with algorithms and real-world projects. This improved my analytical and programming skills as I tackled challenges like data preprocessing, model optimization.</p>
+<!--Certificate Image-->
+<p><a href="images/internship2.jpeg" target="_blank"><i class="bi bi-award" style="font-size: 1.5rem; color: black; cursor: pointer;"></i></a></p>
+   </div>
+
+  </div>
+</div>
+</div>
+<br>
+
+<div class="line3"></div>
+ <!--Experience Section Ends-->
+ 
+ <!--Service Section Starts-->
+
+ <!--laptop Size Section Starts-->
+<div class="container4" id="service">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card card1">
+      <p><i class="fa fa-laptop-code" style="color: #007bff;"></i></p>
+      <div class="card-body">
+        <h5 class="card-title" style="color: #007bff;">Responsive Web Development</h5>
+        <p class="card-text">Using HTML, CSS, and Bootstrap, I can create responsive and visually appealing websites that look great on any device.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card2">
+     
+      <div class="card-body">
+        <h5 class="card-title services" style="color: #28B463;">Services</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card3">
+  <p><i class="fa fa-code" style="color: #ffc107;"></i></p>
+      <div class="card-body">
+        <h5 class="card-title" style="color: #ffc107;"> Dynamic Web Functionality</h5>
+        <p class="card-text">I use JavaScript to add interactivity and functionality to websites, creating features like dynamic forms, real-time updates, and engaging user interfaces.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card4">
+      <p><i class="fa fa-play-circle" style="color: #28a745;"></i></p>
+      <div class="card-body">
+        <h5 class="card-title" style="color: #28a745;">Interactive Animations</h5>
+        <p class="card-text">With GSAP, I create engaging animations that bring websites to life, ensuring an interactive and dynamic user experience.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card5">
+     <p><i class="fa fa-code-branch" style="color: #dc3545;"></i></p>
+      <div class="card-body">
+        <h5 class="card-title" style="color: #dc3545;">Version Control and Collbortion</h5>
+        <p class="card-text" >Using Git and GitHub, I manage code efficiently, collaborate on projects seamlessly, and maintain version control for consistent development.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="line3"></div>
+<!--laptop Size Section Ends-->
+
+<!--Mobile Size Section Starts-->
+<div class="service-container" id="service">
+  
+<div class="card mb-3 mobile-card" style="width: 90%; height: 250px; background-color: black; ">
+  <div class="card-body">
+    <h5 class="card-title" style="color: #28B463;">Services</h5>
+  </div>
+</div>
+<div class="card  mb-3 mobile-card1" style="width: 90%;">
+   <p><i class="fa fa-laptop-code card_laptop-color"></i></p>
+  <div class="card-body">
+    <h5 class="card-title"  style="color: #007bff;">Responsive Web Development</h5>
+    <p class="card-text">Using HTML, CSS, and Bootstrap, I can create responsive and visually appealing websites that look great on any device.</p>
+ 
+  </div>
+</div>
+<div class="card mb-3 mobile-card2" style="width: 90%;">
+ <p><i class="fa fa-code" style="color: #ffc107;"></i></p>
+  <div class="card-body">
+    <h5 class="card-title" style="color: #ffc107;">Dynamic Web Functionality</h5>
+    <p class="card-text">I use JavaScript to add interactivity and functionality to websites, creating features like dynamic forms, real-time updates, and engaging user interfaces.</p>
+   
+  </div>
+</div>
+<div class="card mb-3 mobile-card3" style="width: 90%;">
+ <p><i class="fa fa-play-circle" style="color: #28a745;"></i></p>
+  <div class="card-body">
+    <h5 class="card-title" style="color: #28a745;">Interactive Animations</h5>
+    <p class="card-text">With GSAP, I create engaging animations that bring websites to life, ensuring an interactive and dynamic user experience.</p>
+
+  </div>
+</div>
+<div class="card mb-3 mobile-card4" style="width: 90%;">
+      <p><i class="fa fa-code-branch" style="color: #dc3545;"></i></p>
+  <div class="card-body">
+    <h5 class="card-title" style="color: #dc3545;">Version Control and Collbortion</h5>
+    <p class="card-text">Using Git and GitHub, I manage code efficiently, collaborate on projects seamlessly, and maintain version control for consistent development.</p>
+   
+  </div>
+</div>
+
+</div>
+<!--Mobile Size Section Ends-->
+<!--Service Section Ends-->
+
+<!--Project Section Starts-->
+<!--Mini Project-->
+<div class="project-container" id="project">
+  <h1 style="color: #F1C40F; margin-left: 20px;">Projects</h1>
+  <h3>Mini Projects</h3>
+  <div class="mini-project">
+    <div  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="500" class="project">
+      <h5> GSAP Flip Box Animation</h5>
+      <div class="mask">
+ <img src="images/flip.png" alt="Flip" width="250px" height="200px" class="project-image image1">
+      </div>
+      <div class="project-icons">
+       <a href="video/gsap flip.mp4" target="_blank" >
+        <p><i class="fas fa-video"></i></p>
+      </a>
+       <a href="https://sivakumarselvaraj2003.github.io/GSAP-Flip/" target="_blank" >
+        <p><i class="fas fa-link"></i></p>
+      </a>
+      </div>
+    </div>
+    <div  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="500" class="project">
+            <h5>GSAP Scroll Navigation</h5>
+<div class="mask">
+         <img src="images/navigation.png" alt="Navigation" width="250px" height="200px" class="project-image image2">
+      </div>
+      <div class="project-icons">
+        <a href="video/gsap scrollto.mp4" target="_blank" >
+          <p><i class="fas fa-video" ></i></p>
+        </a>
+       <a href=" https://sivakumarselvaraj2003.github.io/GSAP-scroll-navigation/" target="_blank">
+        <p><i class="fas fa-link"></i></p>
+      </a>
+      </div>
+    </div>
+    <div  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="500" class="project">
+            <h5>GSAP Text Animation</h5>
+<div class="mask">
+         <img src="images/text.png" alt="Text Animation" width="250px" height="200px" class="project-image image3">
+      </div>
+      <div class="project-icons">
+       <a href="video/gsaptext.mp4" target="_blank" >
+        <p><i class="fas fa-video"></i></p>
+      </a>
+       <a href=" https://sivakumarselvaraj2003.github.io/GSAP-text-animation/" target="_blank">
+        <p><i class="fas fa-link"></i></p>
+      </a>
+      </div>
+    </div>
+    <div data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="500" class="project">
+            <h5>GSAP Interactive Animations</h5>
+<div class="mask">
+        <img src="images/ease.png" alt="Interactive Animation" width="250px" height="200px" class="project-image image4">
+      </div>
+      <div class="project-icons">
+      <a href="video/gsap ease.mp4" target="_blank">
+        <p><i class="fas fa-video"></i></p>
+      </a>
+        <a href="https://sivakumarselvaraj2003.github.io/GSAP-interactive-aimation/" target="_blank">
+          <p><i class="fas fa-link"></i></p>
+        </a>
+      </div>
+    </div>
+    <div  data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="500" class="project">
+            <h5>GSAP ScrollTrigger Animations</h5>
+<div class="mask">
+         <img src="images/scrolltext.png" alt="Scrolltext" width="250px" height="200px" class="project-image image5">
+      </div>
+      <div class="project-icons">
+      <a href="video/gsap text animation.mp4" target="_blank">
+        <p><i class="fas fa-video"></i></p>
+      </a>
+       <a href="https://sivakumarselvaraj2003.github.io/GSAP-scrolltrigger-animation/" target="_blank">
+        <p><i class="fas fa-link"></i></p>
+      </a>
+      </div>
+    </div>
+    <div data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="500"  class="project">
+            <h5>Navbar with Bootstrap & GSAP</h5>
+<div class="mask">
+         <img src="images/navbar.png" alt="Navbar" width="250px" height="200px" class="project-image image6">
+      </div>
+      <div class="project-icons">
+        <a href="video/My Portfolio - Google Chrome 2024-12-06 04-47-16.mp4" target="_blank">
+          <p><i class="fas fa-video"></i></p>
+        </a>
+       <a href="https://sivakumarselvaraj2003.github.io/GSAP-navbar/" target="_blank">
+        <p><i class="fas fa-link"></i></p>
+      </a>
+      </div>
+    </div>
+  </div>
+  <!--Main project-->
+  <h3>Main Projects</h3>
+  <div class="main-project">
+    <div  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="500" class="projects">
+      <h5>CodeSpeak: Accessible Web-Based Code Editor</h5>
+      <div class="masks">
+        <img src="images/codespeak.png" alt="Code Speak" class="projects-img">
+      </div>
+      <div class="project-icons">
+      <a href="video/Code Speak - Google Chrome 2024-12-19 05-17-27.mp4" target="_blank">
+        <p><i class="fas fa-video"></i></p>
+      </a>
+        <a href="https://sivakumarselvaraj2003.github.io/CodeSpeakCodeEditorWebsite/" target="_blank">
+          <p><i class="fas fa-link"></i></p>
+        </a>
+      </div>
+    </div>
+    <div  data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="500" class="projects">
+      <h5>Modern Portfolio</h5>
+  <div class="masks">
+        <img src="images/portfolio.png" alt="Portfolio" class="projects-img">
+      </div>
+      <div class="project-icons">
+        <p><i class="fas fa-video"></i></p>
+        <p><i class="fas fa-link"></i>  </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="line3"></div>
+<!--Project Section Ends-->
+
+<!--Certificate Section Starts-->
+<div class="certificate-container" id="certificate">
+  <h1 style="color: aqua; margin-left: 20px;">Certifications</h1>
+  <div class="content">
+    <div class="certificate">
+      <div class="certificate-img">
+      <img src="images/spokentutorial.jpeg" alt="Spoken Tutorial" width="200px" height="200px" class="img-photos">
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="500" class="certificate-text">
+        <h4>Certificate of Completion - HTML Training</h4>
+        <p><i>Spoken Tutorial Project, IIT Bombay</i></p>
+        <p>"Successfully completed the HTML training program through self-learning and passed the online assessment with a score of 80%."</p>
+      </div>
+    </div>
+    <div class="certificate">
+       <div data-aos="zoom-in" data-aos-duration="500" class="certificate-text">
+      <h4>Certificate of Completion - Front-End Development (HTML)</h4>
+      <p><i>Great Learning Academy</i></p>
+        <p>"Successfully completed a free online course on Front-End Development - HTML in July 2023."</p>
+      </div>
+      <div class="certificate-img">
+      <img src="images/html.jpeg" alt="Great Learning" width="200px" height="200px" class="img-photos1">
+      </div>
+     
+    </div>
+    <div class="certificate">
+      <div class="certificate-img">
+       <img src="images/nptl.jpeg" alt="NPTEL" width="200px" height="200px" class="img-photos">
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="500" class="certificate-text">
+       <h4>NPTEL Online Certification - Responsible & Safe AI Systems</h4>
+       <p><i>Funded by the MoE, Govt. of India</i></p>
+       <p>"Successfully completed a 12-week course (July–October 2024) on Responsible & Safe AI Systems, certified by NPTEL."</p>
+      </div>
+    </div>
+    <div class="certificate">
+      <div data-aos="zoom-in" data-aos-duration="500" class="certificate-text">
+      <h4>Certificate of Appreciation - Website Designing</h4>
+      <p><i>PSN College of Engineering and Technology </i></p>
+      <p>"Awarded 1st Prize in the Website Designing Competition during Elation-2K24 on 9th March 2024."</p>
+      </div>
+      <div class="certificate-img">
+       
+          <img src="images/website.jpeg" alt="Website Design prize" width="200px" height="200px" class="img-photos1">
+      </div>
+    </div>
+    <div class="certificate">
+      <div class="certificate-img">
+          <img src="images/reactjs.jpeg" alt="React JS" width="200px" height="200px" class="img-photos">
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="500" class="certificate-text">
+     <h4>Certificate of Completion - REACT_JS Training</h4>
+     <p><i>CADD Expert Training Institution</i></p>
+     <p>"Successfully completed the REACT_JS course, conducted from 18th March 2024 to 2nd April 2024."</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="line3"></div>
+<!--Certificate Section Ends-->
+
+<!--Contact Me Section Starts-->
+<div class="contact-container" id="contact">
+  <h1 style="color: #E74C3C; margin-left: 20px;">Contact Me</h1>
+  <div class="contact-content" >
+    <p class="contact-text"><i>I bring hands-on experience in HTML, CSS, Bootstrap, JavaScript, and GSAP, with a focus on creating dynamic, visually appealing, and user-friendly web solutions. If you're excited to collaborate or have any opportunities, feel free to reach out to me!</i></p>
+    <h4><i class="fa fa-user user-icon" id="user-i"></i><span id="user-name" style="font-weight: 600;">Sivakumar Selvaraj</span></h4>
+    <h4><i class="bi bi-laptop laptop-icon"></i><span id="laptop-name" style="font-weight: 600;">FrontEnd Developer</span></h4>
+    <h4><i class="fas fa-map-marker-alt map-icon"></i><span id="map-name" style="font-weight: 600;">108/A, Pandian Nagar 3rd Street, Thiruthangal</span></h4>
+      <h4> <i class="bi bi-envelope envelope-icon"></i><a href="email:siva4kumar2003@gmail.com" id="envelope-name" style="font-weight: 600;">siva4kumar2003@gmail.com</a></h4>
+    <h4> <i class="fas fa-phone phone-icon"></i><a href="tel:+9361343013" id="phone-name" style="font-weight: 600;">9361343013</a></h4>
+  </div>
+  <!--Social Media-->
+  <div class="contact-media">
+    <p data-aos="flip-right" data-aos-duration="1000"><a href="https://www.linkedin.com/in/sivakumarselvaraj2003" target="_blank">
+    <i class="fa-brands fa-linkedin-in linked"></i> </a> </p>
+    <p data-aos="flip-right" data-aos-duration="1000"> <a href="https://github.com/SivakumarSelvaraj2003" target="_blank">
+    <i class="fab fa-github git"></i> </a></p>
+    <p data-aos="flip-right" data-aos-duration="1000"> <a href="https://www.instagram.com/invites/contact/?igsh=u4xmizkz9ccm&utm_content=qpto68t" target="_blank">
+    <i class="fab fa-instagram insta"></i> </a> </p>
+  </div>
+</div>
+
+<div class="line3"></div>
+<!--Contact Me Section Ends-->
+</main>
+
+<!--Footer Section Starts-->
+<footer>
+ <div class="footer-container">
+   <div class="footer-content">
+    <p><span class="copy" style="color: palevioletred;">&copy;</span> Copyright 2024</p>
+    <p>Powered by <i>Sivakumar Selvaraj</i></p>
+  </div>
+ </div>
+ <!--Scroll Top Button-->
+  <div class="scroll-button">
+    <button class="scroll-btn" id="scrollToTop">&#11165;</button>
+  </div>
+</footer>
+
+<!--Footer Section Ends-->
+
+
+    <!--gsap core library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!--gsap scroll trigger plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!--JS Connection Link-->
+    <script src="app.js"></script>
+    <!--Bootstrap JS Link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--AOS Animation Js Connection Link-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--AOS Library JS Code-->
+    <script>
+  AOS.init();
+    </script>
+    <!--for type animation-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</body>
+</html>

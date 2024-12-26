@@ -1,0 +1,1425 @@
+/* ============================= */
+/* -------- Font Awesome -------- */
+/* ============================= */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* ============================= */
+/* -------- General CSS -------- */
+/* ============================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: "Titillium Web", serif;
+  
+}
+body {
+    background: linear-gradient(to right, #000000, #ffffff);
+    background-size: 400% 200%;
+    animation: AnimationName 30s ease infinite;
+}
+
+/* ============================= */
+/* -------- Navbar CSS -------- */
+/* ============================= */
+nav .navbar-toggler{
+  background-color: aliceblue;
+}
+nav .navbar-brand {
+  font-size: 1.8rem;
+  padding-left: 1rem;
+  font-weight: bolder;
+  color: aliceblue;
+}
+nav .navbar-brand:hover{
+  color: aliceblue;
+}
+nav .collapse{
+  font-size: .9rem;
+  margin-left: 50px;
+}
+nav .social_media-icons{
+ 
+  color: aliceblue;
+}
+nav .social-media2{
+  margin-left: 10px;
+/*   visibility: hidden; */
+
+}
+.collapse .nav-link{
+  color: aliceblue;
+ 
+}
+.collapse .nav-link:hover{
+  color: aliceblue;
+}
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center; 
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link i {
+  display: inline-block;
+  font-size: 1.5rem; 
+  transition: transform 0.3s ease;
+}
+.navbar-nav .nav-link span {
+  display: none; 
+  opacity: 0;
+  margin-left: 5px; 
+  color: aliceblue;
+  transition: opacity 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #007bff; 
+}
+.navbar-nav .nav-link:hover i {
+  transform: scale(1.1); 
+}
+.navbar-nav .nav-link:hover span {
+  display: inline;
+  opacity: 1;
+}
+.nav-link {
+  position: relative;
+  color: white; 
+  text-decoration: none;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%; 
+}
+.nav-link:hover {
+  color: #00ffff; 
+}
+.line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; 
+  height: 1px; 
+  background-color: white; 
+}
+.navbar {
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+.navbar-nav {
+  gap: 20px;
+}
+.nav-item {
+  margin-left: 20px;
+}
+
+/* ============================= */
+/* -------- Introduction CSS -------- */
+/* ============================= */
+section{
+  border-bottom: 1px solid aliceblue;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-top: 60px;
+  
+}
+.img-section{
+ width: 50%;
+ background-color: aliceblue;
+ border-radius: 10%;
+ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.myimage{
+  /* filter: grayscale(1); */
+  margin-left: 40px;
+  cursor: pointer;
+   transition: filter 2s ease-in-out;
+}
+/* .myimage:hover{
+  filter: none;
+
+} */
+.text-section{
+  width: 50%;
+  margin-top: 60px;
+}
+.text-heading h1{
+  font-weight: 600;
+  font-size: 4rem;
+}
+.top-animation{
+  transform: translateX(100px);
+ 
+  color: palevioletred;
+}
+.highlight{
+  color: white;
+  transform: translateX(-100px);
+}
+.text-para{
+  color: palevioletred;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-left: 100px;
+}
+
+/* ============================= */
+/* -------- About Me CSS -------- */
+/* ============================= */
+.container2{
+margin-top: 60px;
+margin-left: 50px;
+margin-right: 10px;
+margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 4rem;
+  
+}
+.aboutmeImage{
+  filter: grayscale(1);
+  cursor: pointer;
+  margin-left: 40px;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.img-container{
+  width: 50%;
+}
+.aboutme-text{
+  color: aliceblue;
+  width: 100%;
+  margin-right: 50px;
+}
+.aboutme-text h1{
+  color: orangered;
+  font-weight: 600;
+   margin-left: 10px;
+  width: 100%;
+ 
+}
+.info {
+  max-height: 0; 
+  overflow: hidden;
+  transition: max-height 0.5s ease-out; 
+}
+.info.show {
+  max-height: 500px; 
+}
+.arrow{
+  text-align: end;
+}
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 12px;
+  cursor: pointer;
+  clip-path: inset(0 3ch 0 0);
+  animation: l4 1s steps(4) infinite;
+}
+.loader:before {
+  content: attr(data-text); 
+}
+@keyframes l4 {to{clip-path: inset(0 -1ch 0 0)}}
+
+.info p{
+  line-height: 2;
+  max-width: 95%;
+  font-size: 1rem;
+  
+}
+.info h4{
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.info-span {
+    background-image: linear-gradient( rgb(204, 106, 71), rgb(204, 106, 71));
+    background-size: 0%; 
+    background-repeat: no-repeat;
+    background-position: bottom; 
+    transition: background-size .5s ease-in;
+    line-height: 2;
+    border-radius: 0; 
+    margin: 0;
+}
+.resume{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.active{
+    background-size: 100% 100%;
+    
+}
+.scrolled {
+    color: aliceblue; 
+  }
+  
+/* ============================= */
+/* -------- Skills CSS -------- */
+/* ============================= */  
+  .skills-section{
+padding: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 12rem;
+ 
+}
+.skills{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  gap: 1rem;
+}
+.skill-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+}
+.skill-name p{
+  margin: 0px;
+  color: aliceblue;
+  font-size: 1.2rem;
+  
+}
+.skills-section .progress {
+    border-radius: 2px;
+    height: 10px;
+    
+}
+.skills-section .progress .progress-bar {
+    border-radius: 2px;
+    height: 10px;
+}
+.skills .frontend-head{
+  font-weight: bolder;
+  background: linear-gradient(90deg, orangered, blue,yellow);
+  background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.skills .framework-head{
+  font-weight: bolder;
+  background: linear-gradient(90deg, purple, #28B463, red);
+  background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.line3{
+  border-bottom: 2px solid whitesmoke;
+}
+/*  .progress-bar {
+    width: 0%;
+    animation: loading 2s ease-in-out forwards; 
+  }
+
+  @keyframes loading {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 95%; 
+    }
+  }  */
+
+
+/* ============================= */
+/* -------- Experience CSS -------- */
+/* ============================= */  
+.container3{
+margin: 20px;
+  margin-top: 40px;
+ color: black;
+
+}
+.container3-tittle{
+  color: rgb(85, 91, 255);
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-left: 50px;
+}
+  .experience-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 40px;
+  }
+  .section1{
+    width: 40%;
+    height: 50%;
+    border: 2px solid whitesmoke;
+    padding: 2rem;
+   	background-color: black;
+     border-radius: 5px 100px 5px;
+    text-align: center;
+box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, 
+            rgb(85, 91, 255) 0px 0px 0px 6px; 
+  }
+  .section2{
+    width: 40%;
+    height: 50%;
+    border: 2px solid whitesmoke;
+    padding: 2rem;
+     background-color: black;
+     border-radius: 100px 5px 100px;
+      text-align: center;
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, 
+            rgb(85, 91, 255) 0px 0px 0px 6px;
+  }
+
+/* ============================= */
+/* -------- Service CSS -------- */
+/* ============================= */  
+.container4{
+  margin-top: 300px;
+  padding: 20px;
+}
+.card{
+  padding: 1rem;
+  text-align: center;
+  
+}
+.card i{
+    font-size: 4rem;
+  }
+  .col .card2{
+    position: relative;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    background-color: black;
+    color: aliceblue;
+    box-shadow: #28B463 0px 0px 0px 3px, 
+            #28B463 0px 0px 0px 6px; 
+  }
+  .services{
+    font-size: 3rem;
+    margin-top: 80px;
+  }
+  .card1{
+    position: absolute;
+    left: 355px; 
+    
+  }
+  .card3{
+    position: absolute;
+    right: 355px;
+  }
+  .card4{
+    position: absolute;
+    right: 355px;
+  }
+  .card5{
+    position: absolute;
+    bottom: 300px;
+    left: 355px; 
+  }  
+  .fa-cogs{
+  z-index: 10;
+}
+  .card_laptop-color{
+    color: #007bff;
+  }
+
+/* ============================= */
+/* -------- Project CSS -------- */
+/* -------- Mini Project CSS -------- */
+/* ============================= */  
+  .project-container{
+    padding: 3rem;
+  }
+  .project-container h1{
+    color: aliceblue;
+    font-size: 3rem;
+  }
+  .project-container h3{
+    font-size: 1.2rem;
+    padding: .5rem;
+    color: aliceblue;
+    display: inline-block;
+    margin-left: 430px;
+    box-shadow: #F1C40F 0px 0px 0px 3px, 
+            #F1C40F 0px 0px 0px 6px; 
+            margin-top: 30px;
+    
+  }
+  .mini-project{
+    margin-top: 50px;
+    margin-left: 5px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      width: 100%;
+    }
+.project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: palegoldenrod;
+  box-shadow: #F1C40F 0px 0px 0px 3px, 
+            #F1C40F 0px 0px 0px 6px; 
+  transform-origin: 0 0;
+  position: relative;
+}
+.project h5{
+  position: absolute;
+  font-size: 1rem;
+  top: 50px;
+  font-weight: 600;
+}
+.project-icons{
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  bottom: 20px;
+}
+.project-icons a{
+  color: black;
+}
+.fa-video,.fa-link{
+  border: 1px solid black;
+  padding: 6px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.fa-video:hover{
+    background-color: black;
+  color: white;
+}
+.fa-link:hover{
+  background-color: black;
+  color: white;
+}
+.mask{
+  width: 250px;
+  height: 200px;
+  background-color: salmon;
+  overflow: hidden;
+  clip-path: polygon(30% 30%,70% 30%,70% 70%,30% 70%);
+  cursor: pointer;
+z-index: 1;
+}
+
+/* -------- Main Project CSS -------- */
+  .main-project{
+    margin-top: 50px;
+    margin-left: 5px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      width: 100%;
+    }
+  
+.projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: palegoldenrod;
+  box-shadow: #F1C40F 0px 0px 0px 3px, 
+            #F1C40F 0px 0px 0px 6px; 
+  transform-origin: 0 0;
+  position: relative;
+
+}
+.projects h5{
+  position: absolute;
+  font-size: 1rem;
+  top: 50px;
+  font-weight: 600;
+}
+.masks{
+  width: 400px;
+  height: 200px;
+  background-color: salmon;
+  overflow: hidden;
+  clip-path: polygon(30% 30%,70% 30%,70% 70%,30% 70%);
+  cursor: pointer;
+z-index: 1;
+}
+.projects-img{
+  width: 400px;
+  height: 200px;
+}
+
+
+/* ============================= */
+/* -------- Certificate CSS -------- */
+/* ============================= */  
+.certificate-container{
+  margin-top: 20px;
+  padding: 3rem;
+}
+.certificate-container h1{
+  margin-bottom: 70px;
+  color: aliceblue;
+}
+.certificate{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  gap: 2rem;
+  color: aliceblue;
+}
+.certificate-text{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.certificate-text p{
+  width: 60%;
+}
+.certificate-text h4{
+  font-size: 1.3rem;
+  width: 60%;
+  font-weight: bolder;
+  color: aqua;
+}
+.certificate-img{
+  perspective: 200px;
+}
+.img-photos{
+  width: 400px;
+  height: 300px;
+  transform: rotateY(10deg);
+  margin-left: 50px;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+.img-photos:hover{
+  transform: rotateY(0deg);
+}
+.img-photos1{
+  width: 400px;
+  height: 300px;
+  transform: rotateY(-10deg);
+  margin-right: 50px;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+.img-photos1:hover{
+  transform: rotateY(0deg);
+}
+
+
+/* ============================= */
+/* -------- Contact Me CSS -------- */
+/* ============================= */  
+.contact-container{
+  color: aliceblue;
+  margin-top: 50px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+}
+.contact-container a{
+  color: aliceblue;
+
+  text-decoration: none;
+}
+.contact-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-media{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.contact-media i{
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid whitesmoke;
+}
+.linked{
+    transition: all 0.3s ease-in-out;
+}
+.linked:hover{
+    color: #0077b5;
+    border: 1px solid #0077b5;
+}
+.git{
+  transition: all 0.3s ease-in-out;
+}
+.git:hover{
+  color: red;
+  border: 1px solid red;
+}
+.insta{
+    transition: all 0.3s ease-in-out;
+}
+.insta:hover{
+  color: #e4405f;
+  border: 1px solid #e4405f;
+
+}
+.contact-content h4{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 20px;
+
+}
+.contact-content h4 i{
+  border: 1px solid whitesmoke;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* .fa-user{
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  transition: all 0.5s ease-in-out;
+}
+ */
+
+#user-i {
+  background-color: #E74C3C;
+}
+
+#user-i:hover {
+  color: orangered;
+  border: 1px solid orangered;
+}
+
+.bi-laptop {
+  background-color: #E74C3C;
+}
+.bi-laptop:hover {
+  color: blue;
+  border: 1px solid blue;
+}
+.fa-map-marker-alt{
+  background-color: #E74C3C;
+}
+.fa-map-marker-alt:hover{
+  color: orange;
+  border: 1px solid orange;
+}
+.bi-envelope{
+    background-color: #E74C3C;
+}
+.bi-envelope:hover{
+  color: green;
+  border: 1px solid green;
+}
+.phone-icon{
+  background-color: #E74C3C;
+}
+.phone-icon:hover{
+  color: purple;
+  border: 1px solid purple;
+}
+#laptop-name{
+  transition: all .5s ease-in;
+}
+#user-name{
+  transition: all .5s ease-in;
+}
+#map-name{
+  transition: all .5s ease-in;
+}
+#envelope-name{
+  transition: all .5s ease-in;
+}
+#phone-name{
+  transition: all .5s ease-in;
+}
+
+
+/* ============================= */
+/* -------- Footer CSS -------- */
+/* ============================= */  
+.footer-content p{
+  text-align: center;
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+.footer-content i{
+  color: palevioletred;
+}
+.copy{
+  font-size: 1.5rem;
+}
+.scroll-button{
+  text-align: end;
+  margin-right: 50px;
+}
+.scroll-btn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+padding-left: 8px;
+padding-right: 8px;
+padding-bottom: 4px;
+padding-top: 4px;
+  font-size: 1rem;
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+  background-color: black;
+  transition: all .5s ease-in-out;
+}
+.scroll-btn:hover{
+  background-color: palevioletred;
+}
+
+/* ============================= */
+/* -------- Media Query CSS -------- */
+/* -------- Min width Labtop -------- */
+/* ============================= */  
+@media only screen and (min-width: 1024px){
+  .nav-item {
+    margin-left: 30px;
+  }
+  .nav-i .social_media-icons {
+    margin-left: 50px;
+    margin-top: 10px; 
+  }
+  .aboutmeImage{
+    margin-left: 10px;
+  }
+  .card1{
+    position: absolute;
+    left: 355px; 
+    
+  }
+  .card3{
+    position: absolute;
+
+    right: 355px;
+  }
+  .card4{
+    position: absolute;
+    right: 0;
+    bottom: 300px;
+    left: 350px;
+  }
+  .card5{
+    position: absolute;
+    bottom: 300px;
+    left: 0px; 
+  }  
+  .service-container{
+    display: none;
+  }
+}
+
+
+/* ============================= */
+/* -------- Min width Larger laptop -------- */
+/* ============================= */  
+@media only screen and (min-width: 1280px){
+.myimage {
+    width: 400px; 
+    height: 400px;
+    margin-left: 60px;
+  } 
+  .text-heading h1 {
+    margin-left: 20px;
+  }
+  .card1{
+    position: absolute;
+    left: 450px; 
+    
+    
+  }
+  .card3{
+    position: absolute;
+    right: 450px;
+  }
+  .card4{
+    position: absolute;
+    right: 0px;
+    left: 450px;
+    bottom: 280px;
+  }
+  .card5{
+    position: absolute;
+    bottom: 270px;
+    left: 0px; 
+  }  
+  .service-container{
+    display: none;
+  }
+  .project-container h3{
+    margin-left: 500px;
+  }
+}
+/* ============================= */
+/* -------- Max Width larger Laptop -------- */
+/* ============================= */  
+@media only screen and (max-width: 1280px){
+.aboutmeImage{
+  margin-left: 0px;
+}
+.service-container{
+    display: none;
+  }
+}
+
+/* ============================= */
+/* -------- Max Width Smaller Laptop -------- */
+/* ============================= */  
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-brand {
+    font-size: 1.8rem;
+    padding-left: 1rem;
+  }
+  .navbar-nav {
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+  .nav-item {
+    margin-left: 20px;
+  }
+  .nav-i .social_media-icons {
+    margin-left: 30px;
+    margin-top: 10px; 
+  }
+  .aboutmeImage{
+  margin-left: 10px;
+}
+.aboutme-text h1{
+  width: 60%;
+}
+.info p{
+  font-size: 1rem;
+}
+.info h4{
+  font-size: 1.5rem;
+} 
+  .service-container{
+    display: none;
+  }
+}
+
+/* ============================= */
+/* -------- Larger tablet -------- */
+/* ============================= */  
+@media only screen and (max-width: 992px){
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+  .text-section {
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .text-heading h1 {
+    font-size: 3rem;
+  }
+  .text-para {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+    .img-section {
+    width: 50%;
+    border-radius: 10%;
+  }
+  .myimage {
+    width: 290px; 
+    height: 300px;
+    margin-left: 10px;
+  } 
+  .aboutmeImage{
+  margin-left: 0px;
+  width: 350px;
+  height: 250px;
+}
+.skills-section{
+  gap: 10rem;
+}
+.services{
+      font-size: 2rem;
+    }
+    .container4{
+  margin-top: 400px;
+  padding: 20px;
+}
+.container4{
+      font-size: 16px;
+      display: none;
+    }
+    .service-container{
+    margin-top: 50px;
+    display: block;
+  }
+ .mobile-card{
+margin-left: 30px;
+position: relative;
+z-index: 1;
+box-shadow: #28B463 0px 0px 0px 3px, 
+            #28B463 0px 0px 0px 6px; 
+          }
+.mobile-card .card-title{
+  font-size: 3rem;
+  margin-top: 50px;
+  color: aliceblue;
+}
+.mobile-card1{
+margin-left: 30px;
+position: absolute;
+bottom: 240px;
+}
+.mobile-card2{
+margin-left: 30px;
+position: absolute;
+bottom: 500px;
+}
+.mobile-card3{
+margin-left: 30px;
+position: absolute;
+bottom: 750px;
+}
+.mobile-card4{
+margin-left: 30px;
+position: absolute;
+bottom: 1000px;
+}
+.project-container h3{
+    margin-left: 350px;
+  }
+  .mini-project{
+    margin-left: 50px;
+  }
+  .projects{
+    width: 350px;
+  }
+  .masks{
+    width: 300px;
+  }
+  .projects h5{
+    font-size: 12px;
+  }
+  .main-project{
+    padding-left: 2.5rem;
+  }
+    .certificate-text p{
+      width: 100%;
+    }
+    .certificate-text h4{
+      width: 100%;
+    }
+}
+
+@media only screen and (max-width: 850px){
+.img-section {
+    width: 100%;
+    border-radius: 10%;
+  }
+
+  .myimage {
+    width: 450px;
+    height: 450px;
+
+  }
+  .service-container{
+    margin-top: 50px;
+  }
+  .mobile-card{
+margin-left: 30px;
+position: relative;
+z-index: 1;
+box-shadow: #28B463 0px 0px 0px 3px, 
+            #28B463 0px 0px 0px 6px; 
+          }
+.mobile-card .card-title{
+  font-size: 3rem;
+  margin-top: 50px;
+  color: aliceblue;
+}
+.mobile-card1{
+margin-left: 30px;
+position: absolute;
+bottom: 240px;
+}
+.mobile-card2{
+margin-left: 30px;
+position: absolute;
+bottom: 500px;
+}
+.mobile-card3{
+margin-left: 30px;
+position: absolute;
+bottom: 750px;
+}
+.mobile-card4{
+margin-left: 30px;
+position: absolute;
+bottom: 1000px;
+}
+.project{
+  width: 450px;
+  height: 400px;
+}
+.mask{
+  width: 400px;
+  height: 350px;
+}
+.mask img{
+  width: 400px;
+  height: 350px;
+}
+.project-container h3{
+    margin-left: 220px;
+  }
+  .contact-content{
+    width: 100%;
+  }
+  .service-container{
+    display: block;
+  }
+}
+
+/* ============================= */
+/* -------- Smaller tablet -------- */
+/* ============================= */  
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+  }
+  .collapse {
+    font-size: 0.9rem;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 10px;
+  }
+  .nav-item {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+  .nav-i .social_media-icons {
+    margin-left: 0px;
+    margin-top: 10px; 
+    justify-content: center;
+    display: flex;
+  }
+  .social-media1, .social-media2 {
+    font-size: 30px; 
+    color: white;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 40px;
+  }
+  .text-section {
+    width: 90%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .text-heading h1 {
+    font-size: 4rem;
+  }
+  .highlight{
+    margin-left: 10px;
+  }
+  .text-para {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+    .img-section {
+    width: 90%;
+    border-radius: 10%;
+  }
+  .myimage {
+    width: 400px; 
+    height: 400px;
+    margin-left: 30px;
+  }
+  .container2{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-container{
+  margin-right: 100px;
+}
+.aboutmeImage{
+  width: 400px;
+  height: 300px;
+}
+.aboutme-text{
+  margin-left: 100px;
+  width: 80%;
+}
+.skills-section{
+display: flex;
+flex-direction: column;
+gap: 2rem;
+margin-left: 100px;
+}
+.skills{
+  width: 70%;
+}
+.experience-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  .section1{
+    width: 80%;
+  }
+  .section2{
+    width: 80%;
+  }
+  .mini-project{
+    margin-left: 20px;
+  }
+  .project{
+  width: 300px;
+  height: 250px;
+}
+.mask{
+  width: 250px;
+  height: 200px;
+}
+.mask img{
+  width: 250px;
+  height: 200px;
+}
+.project-container h3{
+    margin-left: 270px;
+  }
+    .projects{
+    width: 300px;
+  }
+  .masks{
+    width: 250px;
+  }
+  .img-photos{
+    width: 300px;
+    height: 200px;
+  } 
+  .img-photos1{
+    width: 300px;
+    height: 200px;
+  } 
+  .service-container{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px){
+    .img-section {
+    width: 80%;
+    border-radius: 10%;
+  }
+  .myimage {
+    width: 350px;
+    height: 350px;
+    margin-left: 30px;
+  }
+  .container2{
+    gap: 1rem;
+  }
+  .project-container h3{
+    margin-left: 100px;
+  }
+  .main-project{
+    padding-left: 1rem;
+  }
+  .certificate{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+  }
+  .certificate-img{
+  perspective: 200px;
+}
+  .img-photos{
+  transform: rotateX(10deg);
+  margin-left: 60px;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+.img-photos1{
+  transform: rotateX(10deg);
+  margin-left: 60px;
+  margin-bottom: 30px;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+.service-container{
+    display: block;
+  }
+}
+
+
+/* ============================= */
+/* -------- Mobile Phone -------- */
+/* ============================= */  
+@media only screen and (max-width: 480px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .navbar-nav {
+    gap: 5px;
+  }
+  .nav-item {
+    margin-left: 0;
+  }
+  .social-media1, .social-media2 {
+    font-size: 25px;
+    color: white;
+  }
+  .text-heading h1 {
+    font-size: 2.5rem;
+  }
+  .text-para {
+    font-size: 1.2rem;
+  }
+  .img-section {
+    width: 80%;
+    border-radius: 10%;
+  }
+  .myimage {
+    width: 200px;
+    height: 200px;
+    margin-left: 60px;
+  }
+  .img-container{
+  margin-right: 150px;
+}
+.aboutmeImage{
+  width: 320px;
+  height: 250px;
+}
+.aboutme-text{
+  width: 95%;
+  margin-right: 70px;
+}
+  .skills-section{
+    margin-left: 50px;
+  }
+  .container3{
+    font-size: 12px;
+  }
+  .mini-project{
+  margin-left: 20px;
+}
+  .company-name{
+    font-size: 16px;
+  }
+  .project-container h3{
+    margin-left: 100px;
+  }
+  .certificate{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+  }
+    .img-photos{
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    .img-photos1{
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    .contact-content h4{
+      font-size: 16px;
+    }
+    .service-container{
+    display: block;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .myimage {
+    margin-left: 40px; 
+  }
+  .img-container{
+  margin-right: 70px;
+}
+  .aboutmeImage{
+  width: 250px;
+  height: 200px;
+}
+.info h4{
+  font-size: 1.3rem;
+} 
+.mini-project{
+  margin-left: 0px;
+}
+.main-project{
+    padding-left: 0px;
+  }
+    .img-photos{
+      width: 250px;
+      margin-left: 10px;
+    }
+    .img-photos1{
+      width: 250px;
+      margin-left: 10px;
+    }
+    .service-container{
+    display: block;
+  }
+}
