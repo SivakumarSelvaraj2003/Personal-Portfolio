@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <!--Javascript Connection Link-->
     <script type="module" src="app.js"></script>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="images/me1.png">
     <!--Google Fonts Link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!--Bootstrap CSS Link-->
@@ -20,12 +22,10 @@
      <!--AOS Animation Library Link-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
 <style>
-    body{
-        background-color: black;
-    }
-    
+  body{
+      background-color: var(--bg-color);
+  }
 </style>
 <body>
 
@@ -34,7 +34,10 @@
 
       <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid">
-    <a class="navbar-brand " href="#">MyFolio</a>
+    <div class="heading">
+      <a class="navbar-brand " href="#">MyFolio</a>
+      <img src="images/sun-256.png" alt="sun" class="light-mode" id="icon">
+    </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -114,7 +117,7 @@
     <p> <span class="text-para"></span></p>
   </div>
   <div data-aos="zoom-out" data-aos-duration="1000"  class="img-section">
-    <img src="images/me1.png" data-aos="zoom-in" data-aos-duration="1000" class="myimage" alt="me" width="350px" height="350px">
+    <img src="images/me1.png" data-aos="zoom-in" data-aos-duration="1000" class="myimage" alt="me" width="350px" height="350px" >
   </div>
 </div>
 <br>
@@ -124,26 +127,25 @@
  
  <!--About me Section Starts-->
 <div class="container2" id="about">
-  <div class="img-container"><img src="images/about.jpeg" data-aos="fade-up"data-aos-duration="1000"  alt="me" width="400px" height="300px" class="aboutmeImage" id="aboutImage">
-  </div>
+  <img src="images/about.jpeg" data-aos="fade-up"data-aos-duration="1000"  alt="me" width="500px" height="400px" class="aboutmeImage" id="aboutImage">
   <div  data-aos="fade-down" data-aos-duration="1000"  class="aboutme-text">
-  <h1>About Me {</h1>
+  <h1> <span class="emoji">👤</span> About Me {</h1>
   
     <div class="info">
    <div class="resume">
      <div class="name-div">
-      <h4 >Name: Sivakumar.</h4>
-    <h4 >Profession: Frontend Developer.</h4>
+      <h4 >Sivakumar</h4>
+    <h4 >Frontend Developer</h4>
     </div>
     <div class="resume-div">
-<p><a href=""><img src="images/cv.png" alt="" width="50px" height="50px"></a></p>
+<p><a href="pdf/Resume.pdf" target="_blank"><img src="images/cv.png" alt="" width="50px" height="50px" class="resume-img"></a></p>
     </div>
    </div>
-    <p >Hello! I’m a passionate <span class="info-span"> Frontend Developer </span> specializing in <span class="info-span"> HTML, CSS, JavaScript, </span> and modern frameworks. I focus on creating responsive, <span class="info-span">visually engaging,</span> and user-friendly websites with <span class="info-span"> clean, maintainable code</span>. Always eager to <span class="info-span"> learn</span>, I stay up-to-date with the  <span class="info-span"> latest web trends</span> and enjoy <span class="info-span"> solving real-world problems</span> both solo and in teams.
+    <p class="about_text-para">Hello! I’m a passionate <span class="info-span"> Frontend Developer </span> specializing in <span class="info-span"> HTML, CSS, JavaScript, </span> and modern frameworks. I focus on creating responsive, <span class="info-span">visually engaging,</span> and user-friendly websites with <span class="info-span"> clean, maintainable code</span>. Always eager to <span class="info-span"> learn</span>, I stay up-to-date with the  <span class="info-span"> latest web trends</span> and enjoy <span class="info-span"> solving real-world problems</span> both solo and in teams.
 
 </p>
   </div>
-  <div class="loader" id="toggle-btn" data-text="Open it..."></div> 
+
   <h1>}</h1>
   
   </div>
@@ -215,16 +217,16 @@
 
  <!--Experience Section Starts-->
 <div class="container3" id="experience">
-  <h3 class="container3-tittle">Experience</h3>
+  <h3 class="container3-tittle"> <span class="emoji">💼</span> Experience</h3>
   <div class="experience-section">
    <div class="section1">
     <p >13.05-2024 to 31.05.2024</p>
     <h4 style="font-weight: bolder;" class="company-name">Bluon Tech Solutions<br>Kovilpatti</h4>
     <p><i>Full Stack Development</i></p>
-    <p class="section-about" style="height: 50%;">
+    <p class="section-about">
 During my full-stack development internship, I gained hands-on experience in frontend development, contributing to real-world projects by building features, optimizing performance,solving challenges. This enhanced my understanding of the software development lifecycle.</p>
 <!--Certificate Image-->
-<p><a href="images/internship.jpeg" target="_blank"><i class="bi bi-award" style="font-size: 1.5rem; color: black; cursor: pointer;"></i></a></p>
+<p><a href="images/internship.jpeg" target="_blank"><span  class="award-emoji" ><i class="bi bi-award" style="font-size: 1.5rem; color: black; cursor: pointer;"></i></span></a></p>
    </div>
    <div class="section2">
      <p>04.09.2023 to 18.09.2023</p>
@@ -233,7 +235,7 @@ During my full-stack development internship, I gained hands-on experience in fro
      <p class="section-about">
 During my artificial intelligence internship, I built a strong foundation in AI and machine learning, gaining hands-on experience with algorithms and real-world projects. This improved my analytical and programming skills as I tackled challenges like data preprocessing, model optimization.</p>
 <!--Certificate Image-->
-<p><a href="images/internship2.jpeg" target="_blank"><i class="bi bi-award" style="font-size: 1.5rem; color: black; cursor: pointer;"></i></a></p>
+<p c><a href="images/internship2.jpeg" target="_blank"><i class="bi bi-award" style="font-size: 1.5rem; color: black; cursor: pointer;"></i></a></p>
    </div>
 
   </div>
@@ -245,51 +247,42 @@ During my artificial intelligence internship, I built a strong foundation in AI 
  <!--Experience Section Ends-->
  
  <!--Service Section Starts-->
-
- <!--laptop Size Section Starts-->
 <div class="container4" id="service">
+  <h1 class="container4-tittle"> <span class="emoji">🛠️</span>  Services</h1>
   <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
-    <div class="card card1">
-      <p><i class="fa fa-laptop-code" style="color: #007bff;"></i></p>
+    <div class="card card1" style="background-color: var(--bg-color);   border: 5px solid green;">
+      <p class="service-emoji"><i class="fa fa-laptop-code" style="color: #007bff;"></i></p>
       <div class="card-body">
         <h5 class="card-title" style="color: #007bff;">Responsive Web Development</h5>
-        <p class="card-text">Using HTML, CSS, and Bootstrap, I can create responsive and visually appealing websites that look great on any device.</p>
+        <p class="card-text" style="color: var(--fo-color);" >Using HTML, CSS, and Bootstrap, I can create responsive and visually appealing websites that look great on any device.</p>
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card card2">
-     
-      <div class="card-body">
-        <h5 class="card-title services" style="color: #28B463;">Services</h5>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card card3">
-  <p><i class="fa fa-code" style="color: #ffc107;"></i></p>
+    <div class="card card3"  style="background-color: var(--bg-color);   border: 5px solid green;" >
+  <p class="service-emoji" ><i class="fa fa-code" style="color: #ffc107;"></i></p>
       <div class="card-body">
         <h5 class="card-title" style="color: #ffc107;"> Dynamic Web Functionality</h5>
-        <p class="card-text">I use JavaScript to add interactivity and functionality to websites, creating features like dynamic forms, real-time updates, and engaging user interfaces.</p>
+        <p class="card-text" style="color: var(--fo-color);" >I use JavaScript to add interactivity and functionality to websites, creating features like dynamic forms, real-time updates, user interfaces.</p>
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card card4">
-      <p><i class="fa fa-play-circle" style="color: #28a745;"></i></p>
+    <div class="card card4"  style="background-color: var(--bg-color);   border: 5px solid green;" >
+      <p class="service-emoji" ><i class="fa fa-play-circle" style="color: #28a745;"></i></p>
       <div class="card-body">
         <h5 class="card-title" style="color: #28a745;">Interactive Animations</h5>
-        <p class="card-text">With GSAP, I create engaging animations that bring websites to life, ensuring an interactive and dynamic user experience.</p>
+        <p class="card-text" style="color: var(--fo-color);" >With GSAP, I create engaging animations that bring websites to life, ensuring an interactive and dynamic user experience.</p>
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card card5">
-     <p><i class="fa fa-code-branch" style="color: #dc3545;"></i></p>
+    <div class="card card5"  style="background-color: var(--bg-color);   border: 5px solid green;" >
+     <p class="service-emoji" ><i class="fa fa-code-branch" style="color: #dc3545;"></i></p>
       <div class="card-body">
         <h5 class="card-title" style="color: #dc3545;">Version Control and Collbortion</h5>
-        <p class="card-text" >Using Git and GitHub, I manage code efficiently, collaborate on projects seamlessly, and maintain version control for consistent development.</p>
+        <p class="card-text" style="color: var(--fo-color);" >Using Git and GitHub, I manage code efficiently, collaborate on projects seamlessly, and maintain version control for consistent development.</p>
       </div>
     </div>
   </div>
@@ -298,55 +291,12 @@ During my artificial intelligence internship, I built a strong foundation in AI 
 <div class="line3"></div>
 <!--laptop Size Section Ends-->
 
-<!--Mobile Size Section Starts-->
-<div class="service-container" id="service">
-  
-<div class="card mb-3 mobile-card" style="width: 90%; height: 250px; background-color: black; ">
-  <div class="card-body">
-    <h5 class="card-title" style="color: #28B463;">Services</h5>
-  </div>
-</div>
-<div class="card  mb-3 mobile-card1" style="width: 90%;">
-   <p><i class="fa fa-laptop-code card_laptop-color"></i></p>
-  <div class="card-body">
-    <h5 class="card-title"  style="color: #007bff;">Responsive Web Development</h5>
-    <p class="card-text">Using HTML, CSS, and Bootstrap, I can create responsive and visually appealing websites that look great on any device.</p>
- 
-  </div>
-</div>
-<div class="card mb-3 mobile-card2" style="width: 90%;">
- <p><i class="fa fa-code" style="color: #ffc107;"></i></p>
-  <div class="card-body">
-    <h5 class="card-title" style="color: #ffc107;">Dynamic Web Functionality</h5>
-    <p class="card-text">I use JavaScript to add interactivity and functionality to websites, creating features like dynamic forms, real-time updates, and engaging user interfaces.</p>
-   
-  </div>
-</div>
-<div class="card mb-3 mobile-card3" style="width: 90%;">
- <p><i class="fa fa-play-circle" style="color: #28a745;"></i></p>
-  <div class="card-body">
-    <h5 class="card-title" style="color: #28a745;">Interactive Animations</h5>
-    <p class="card-text">With GSAP, I create engaging animations that bring websites to life, ensuring an interactive and dynamic user experience.</p>
-
-  </div>
-</div>
-<div class="card mb-3 mobile-card4" style="width: 90%;">
-      <p><i class="fa fa-code-branch" style="color: #dc3545;"></i></p>
-  <div class="card-body">
-    <h5 class="card-title" style="color: #dc3545;">Version Control and Collbortion</h5>
-    <p class="card-text">Using Git and GitHub, I manage code efficiently, collaborate on projects seamlessly, and maintain version control for consistent development.</p>
-   
-  </div>
-</div>
-
-</div>
-<!--Mobile Size Section Ends-->
 <!--Service Section Ends-->
 
 <!--Project Section Starts-->
 <!--Mini Project-->
 <div class="project-container" id="project">
-  <h1 style="color: #F1C40F; margin-left: 20px;">Projects</h1>
+  <h1 style="color: #F1C40F; margin-left: 20px;"> <span class="emoji">📂</span>  Projects</h1>
   <h3>Mini Projects</h3>
   <div class="mini-project">
     <div  data-aos="fade-down"
@@ -454,7 +404,7 @@ During my artificial intelligence internship, I built a strong foundation in AI 
      data-aos-duration="500" class="projects">
       <h5>CodeSpeak: Accessible Web-Based Code Editor</h5>
       <div class="masks">
-        <img src="images/codespeak.png" alt="Code Speak" class="projects-img">
+        <img src="images/main.png" alt="Code Speak" class="projects-img">
       </div>
       <div class="project-icons">
       <a href="video/Code Speak - Google Chrome 2024-12-19 05-17-27.mp4" target="_blank">
@@ -473,8 +423,10 @@ During my artificial intelligence internship, I built a strong foundation in AI 
         <img src="images/portfolio.png" alt="Portfolio" class="projects-img">
       </div>
       <div class="project-icons">
-        <p><i class="fas fa-video"></i></p>
-        <p><i class="fas fa-link"></i>  </p>
+        <p><i class="fas fa-video" style="color: var(--fo-color);  "></i></p>
+      <a href="https://sivakumarselvaraj2003.github.io/Personal-Portfolio/" target="_blank">
+        <p><i class="fas fa-link"></i></p>
+      </a>
       </div>
     </div>
   </div>
@@ -484,7 +436,7 @@ During my artificial intelligence internship, I built a strong foundation in AI 
 
 <!--Certificate Section Starts-->
 <div class="certificate-container" id="certificate">
-  <h1 style="color: aqua; margin-left: 20px;">Certifications</h1>
+  <h1 style="color: aqua; margin-left: 20px;"> <span class="emoji">🎓</span>  Certifications</h1>
   <div class="content">
     <div class="certificate">
       <div class="certificate-img">
@@ -545,7 +497,7 @@ During my artificial intelligence internship, I built a strong foundation in AI 
 
 <!--Contact Me Section Starts-->
 <div class="contact-container" id="contact">
-  <h1 style="color: #E74C3C; margin-left: 20px;">Contact Me</h1>
+  <h1 style="color: #E74C3C; margin-left: 20px;"> <span class="emoji">📞</span>  Contact Me</h1>
   <div class="contact-content" >
     <p class="contact-text"><i>I bring hands-on experience in HTML, CSS, Bootstrap, JavaScript, and GSAP, with a focus on creating dynamic, visually appealing, and user-friendly web solutions. If you're excited to collaborate or have any opportunities, feel free to reach out to me!</i></p>
     <h4><i class="fa fa-user user-icon" id="user-i"></i><span id="user-name" style="font-weight: 600;">Sivakumar Selvaraj</span></h4>
@@ -556,11 +508,11 @@ During my artificial intelligence internship, I built a strong foundation in AI 
   </div>
   <!--Social Media-->
   <div class="contact-media">
-    <p data-aos="flip-right" data-aos-duration="1000"><a href="https://www.linkedin.com/in/sivakumarselvaraj2003" target="_blank">
+    <p><a href="https://www.linkedin.com/in/sivakumarselvaraj2003" target="_blank">
     <i class="fa-brands fa-linkedin-in linked"></i> </a> </p>
-    <p data-aos="flip-right" data-aos-duration="1000"> <a href="https://github.com/SivakumarSelvaraj2003" target="_blank">
+    <p > <a href="https://github.com/SivakumarSelvaraj2003" target="_blank">
     <i class="fab fa-github git"></i> </a></p>
-    <p data-aos="flip-right" data-aos-duration="1000"> <a href="https://www.instagram.com/invites/contact/?igsh=u4xmizkz9ccm&utm_content=qpto68t" target="_blank">
+    <p > <a href="https://www.instagram.com/invites/contact/?igsh=u4xmizkz9ccm&utm_content=qpto68t" target="_blank">
     <i class="fab fa-instagram insta"></i> </a> </p>
   </div>
 </div>
@@ -571,12 +523,12 @@ During my artificial intelligence internship, I built a strong foundation in AI 
 
 <!--Footer Section Starts-->
 <footer>
- <div class="footer-container">
+<div class="footer-container">
    <div class="footer-content">
-    <p><span class="copy" style="color: palevioletred;">&copy;</span> Copyright 2024</p>
-    <p>Powered by <i>Sivakumar Selvaraj</i></p>
-  </div>
- </div>
+      <p><span class="copy" style="color: palevioletred;">&copy;</span> Copyright <span id="year"></span></p>
+      <p>Powered by <i>Sivakumar Selvaraj</i></p>
+   </div>
+</div>
  <!--Scroll Top Button-->
   <div class="scroll-button">
     <button class="scroll-btn" id="scrollToTop">&#11165;</button>
